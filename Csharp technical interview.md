@@ -3,13 +3,17 @@
 1. Quelles sont les différents types de classe qui existent en C\#
 
 > **Static**: C'est un type de classe qui ne peut pas être instancier, on ne peut pas créer des objets de ce type en utilisant le mot clé **new**. On appelle les membres directement à partir du nom de la classe.
+> 
 > **Abstract**: On ne peut pas créer des objects de ce type directement, il faut nécessairement hériter de cette classe pour l'instancier. Les méthodes de cette classes peuvent être abstraites ou non.
+> 
 > **Partial**: C'est un type de classe qui autorise la division des propriétés, méthodes et événements dans plusieurs fichiers sources. Les fichiers sont combinées en une classe unique au moment de la compilation.
+> 
 > **Sealed**: Aucune classe ne peut en hériter.
 
 2. Quelle est la différence entre **break** et **continue**? Est-ce qu'on peut utiliser **break** dans un **if**? Pareil mais pour **continue**?
 
 > **break** peut s'utiliser dans les switch et les boucles, quand le mot clé est atteint, le switch ou la boucle est interrompu. Dans le cas de boucles imbriquées seule la boucle englobante est interrompue.
+> 
 > **continue** ne s'utilise que dans les boucles, il interrompt le tour de boucle courant pour passer au prochain tour sans exécuter le code immédiat après lui.
 
 3. Qu'est-ce qu'une surcharge de méthode?
@@ -34,6 +38,7 @@
 5. Quelle sont les différences entre les types référence et les types valeur?
 
 > Les objets de type valeurs sont stockés dans la pille (stack)
+> 
 > Les objets de type référence sont stockés dans le tas (heap)
 
 6. Quelle est la différence entre le passage par référence et le passage par valeur?
@@ -44,6 +49,7 @@
 7. Quelles sont les techniques pour fabriquer un type **delegate**? Quelle est la différence entre les **Action** et les **Func**
 
 > Les **delegate** sont comme des pointeurs de fonction qui gardent la référence d'une méthode.
+> 
 > Utiliser le mot clé **delegate**
 >
 > ```csharp
@@ -119,6 +125,7 @@
 17. Quelle est la différence entre **const** et **readonly**?
 
 > Les variables constantes ne peuvent être assignés qu'à la déclaration et ne peuvent changer de valeur.
+>
 > Les variables readonly ne peuvent assignés que dans le constructeur de la classe dans laquelle ils se trouvent, mais il est possible de modifier les valeurs contenues mais pas de les réassigner. (on peut ajouter des valeurs dans une liste mais pas réassigner la référence de la liste).
 
 18. Quelle est la différence entre **string** et **StringBuilder**?
